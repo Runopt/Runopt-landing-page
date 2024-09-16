@@ -1,0 +1,220 @@
+.footer {
+  padding: 80px 50px;
+  padding-bottom: 50px;
+  color: #646d7b;
+  font-family: 'satoshi-medium';
+
+  @media (max-width: 1024px) {
+    padding: 100px 1.5rem;
+  }
+  @media (max-width: 1024px) {
+    padding: 0px 1.5rem;
+    margin-top: 50px;
+  }
+  .cta-container {
+    height: 550px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/images/icons/bg.png);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    border-radius: 8px;
+
+    h3 {
+      color: $whiteTextPrimary;
+      text-align: center;
+      font-family: 'Inter Tight';
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+    }
+    .cta-wrapper {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 24px;
+      padding-right: 4px;
+      gap: 1rem;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 4px;
+      background: #faf9f7;
+      box-shadow: 0px 0px 50px 5px rgba(27, 27, 27, 0.1);
+
+      input {
+        color: #1a1a1a;
+        font-size: 16px;
+        font-family: 'satoshi-medium';
+        font-style: normal;
+      }
+
+      ::placeholder {
+        color: #1a1a1a;
+        font-size: 16px;
+        font-family: 'satoshi-medium';
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.304px;
+      }
+
+      button {
+        padding: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 4px;
+        background: linear-gradient(255deg, #355be0 0%, #b945cc 100%);
+        box-shadow: 0px 0px 50px 5px rgba(27, 27, 27, 0.1);
+        font-family: 'satoshi-medium';
+        color: $whiteTextPrimary;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 42px 1.5rem;
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      gap: 1.5rem;
+    }
+  }
+
+  .footer__brand {
+    max-width: 400px;
+    margin-bottom: 44px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 32px;
+    }
+    .footer__logo {
+      // width: 60px;
+      margin-bottom: 30px;
+      width: 120px;
+    }
+
+    .footer__description {
+      font-family: 'satoshi-regular';
+      color: #efefef;
+      font-size: 16px;
+      line-height: 170%;
+      margin-bottom: 10px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-basis: 50%;
+
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+      width: 100%;
+      flex-basis: 100%;
+    }
+
+    .footer__column {
+      margin-right: 30px;
+      margin-bottom: 20px;
+      // width: 100%;
+      // flex-basis: 50%;
+
+      .footer__title {
+        font-family: 'satoshi-medium';
+        color: #a7a7a7;
+        font-size: 16px;
+        margin-bottom: 30px;
+
+        @media (max-width: 768px) {
+          margin-bottom: 1.5rem;
+        }
+      }
+      .footer__list {
+        list-style: none;
+        padding: 0;
+        li {
+          margin-bottom: 20px;
+          max-width: 360px;
+          display: flex;
+          align-items: flex-start;
+
+          img {
+            min-width: 24px;
+          }
+          a {
+            color: #faf9f7;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer__flag {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .footer__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 0.8px solid rgba(255, 255, 255, 0.1);
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    @media (max-width: 768px) {
+      padding-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 12px;
+    }
+
+    small {
+      display: flex;
+      align-items: center;
+      color: #a7a7a7;
+      text-decoration: none;
+    }
+    .footer__socials {
+      display: flex;
+      align-items: center;
+
+      .footer__social-link {
+        margin-left: 20px;
+        img {
+          width: 18px;
+        }
+      }
+    }
+  }
+}

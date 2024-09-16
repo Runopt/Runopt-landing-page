@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import './variables';
+
+@font-face {
+  font-family: 'satoshi-light';
+  src: url('/fonts/Satoshi-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'satoshi-regular';
+  src: url('/fonts/Satoshi-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'satoshi-medium';
+  src: url('/fonts/Satoshi-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'satoshi-bold';
+  src: url('/fonts/Satoshi-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'satoshi-black';
+  src: url('/fonts/Satoshi-Black.woff') format('woff');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'satoshi-regular';
+  font-weight: normal;
+  background: $bgBlack;
+  color: $whiteTextPrimary;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+}
+button {
+  cursor: pointer;
+}

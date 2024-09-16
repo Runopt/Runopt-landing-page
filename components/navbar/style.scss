@@ -1,0 +1,220 @@
+.navbar-container {
+  display: block;
+  padding: 1.2rem 50px;
+  margin: 0 auto;
+  z-index: 9999;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #00000070;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  &.scrolled {
+    border-bottom: 1px solid #ffffff0c;
+  }
+
+  .navbar-inner-wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 111;
+
+    .logo-wrapper {
+      height: 38px;
+
+      img {
+        height: 100%;
+      }
+
+      @media (max-width: 1300px) {
+        height: 42px;
+      }
+    }
+    .menu-list-wrapper {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .active {
+        color: $whiteTextPrimary;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        // a {
+        //   font-family: 'satoshi-medium';
+        //   color: $whiteTextPrimary;
+        // }
+
+        li {
+          font-family: 'satoshi-medium';
+          color: $whiteTextPrimary;
+          font-size: 16px;
+          text-align: left;
+          text-transform: capitalize;
+          cursor: pointer;
+
+          &:hover {
+            background: var(
+              --linear-3,
+              linear-gradient(255deg, #355be0 0%, #b945cc 100%)
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.2s linear;
+          }
+        }
+      }
+    }
+
+    .cta-btn-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      cursor: pointer;
+      font-size: 16px;
+
+      button {
+        border-radius: 4px;
+        background: var(
+          --grad,
+          linear-gradient(255deg, #355be0 0%, #b945cc 100%)
+        );
+        box-shadow: 0px 0px 50px 5px rgba(27, 27, 27, 0.1);
+        color: #FFF;
+        font-family: 'satoshi-medium';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0.6rem 0.8rem;
+      }
+    }
+  }
+}
+
+.mobile-navbar-container {
+  display: none;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    // position: relative;
+    display: flex;
+    background-color: $bgBlack;
+  }
+
+  .heading-wrapper {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1111111;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0rem;
+    background-color: #00000097;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    &.scrolled {
+      border-bottom: 0.5px solid #ffffff0c;
+    }
+
+    @media (max-width: 768px) {
+      padding: 1.2rem 1.5rem;
+    }
+    @media (max-width: 375px) {
+      padding: 1.5rem 1rem;
+    }
+
+    .hamburger-icon {
+      position: relative;
+      cursor: pointer;
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  .nav-menu {
+    overflow: hidden;
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    width: 100%;
+    height: max-content;
+    transition: 150ms;
+    z-index: 111111;
+    padding: 4rem 2rem;
+    background-color: #00000097;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    @media (max-width: 375px) {
+      padding: 2.5rem 1rem;
+    }
+    .navbar-toggle {
+      margin-top: 1rem;
+      width: 100%;
+      display: flex;
+
+      .menu-bar {
+        margin-left: auto;
+        width: 24px;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+
+      li {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $whiteTextPrimary;
+        text-transform: capitalize;
+        overflow: hidden;
+      }
+    }
+
+    .cta-btn-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin-top: 4rem;
+    }
+  }
+
+  .active {
+    top: 64px;
+    transition: 350ms;
+  }
+}

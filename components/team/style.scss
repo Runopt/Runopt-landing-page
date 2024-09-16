@@ -1,0 +1,79 @@
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 0 auto;
+  padding: 100px 0;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1300px;
+
+  .founders {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+
+    .member {
+      flex-basis: 25%;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+  }
+
+  .founders,
+  .members {
+    .member {
+      padding: 1rem;
+      border: 1px solid transparent;
+      border-image: linear-gradient(255deg, #355ae029 0%, #ba45cc27 100%) 1;
+      img {
+        width: 100%;
+        //   height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 4px;
+      }
+
+      .title {
+        margin-top: 2rem;
+        display: flex;
+
+        // justify-content: space-between;
+      }
+      h5 {
+        width: 100%;
+        color: #fff;
+        font-family: 'Inter Tight';
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+        text-align: center;
+        overflow: hidden;
+      }
+      .job-title {
+        margin-top: 8px;
+        color: #a7a7a7;
+        font-family: 'satoshi-regular';
+        font-size: 16px;
+        height: fit-content;
+        font-style: normal;
+        text-align: center;
+        overflow: hidden;
+      }
+    }
+  }
+}
