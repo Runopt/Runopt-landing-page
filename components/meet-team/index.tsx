@@ -8,17 +8,14 @@ const MeetTeam = () => {
         <div className="info-glow"></div>
         <div className="info">
           <img src="./images/icons/about-icon.png" alt="" />
-          <div>Our goals and values</div>
+          <div>Our mission and vision</div>
         </div>
       </div>
 
-      <h3>
-        We’re creating a future of sustainable infrastructure with Artificial Intelligence
-   
-      </h3>
+      <h3>Become the global leader in <br/> digital civil engineering solutions</h3>
 
       <p>
-        Our team is dedicated to empowering civil engineers with AI tools that
+        Our team is dedicated to revolutionizing civil engineering process with AI tools that
         drive smarter, sustainable solutions for the future.
       </p>
 

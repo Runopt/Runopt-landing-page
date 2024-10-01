@@ -26,23 +26,24 @@ const Footer = () => {
             className="footer__logo"
           />
           <p className="footer__description">
-            Runopt is the #1 AI Powered Solutions Platform for Civil Engineers
-            and Builders. Our Runopt enables fully integrated design
-            optimization tool, delivering faster, cost-effective
+            Become the global leader in digital civil engineering solutions
           </p>
         </div>
         <div className="footer__links">
           <div className="footer__column">
-            <h3 className="footer__title">Company</h3>
+            <h3 className="footer__title">Navigations</h3>
             <ul className="footer__list">
               <li>
-                <a href="www.google.com">Features</a>
+                <a href="/#features">Features</a>
               </li>
               <li>
-                <a href="www.google.com">About us</a>
+                <a href="/#faq">FAQs</a>
               </li>
               <li>
-                <a href="www.google.com">Legals</a>
+                <a href="/about-ua">About us</a>
+              </li>
+              <li>
+                <a href="/privacy-policy">Privacy Policy</a>
               </li>
             </ul>
           </div>
@@ -54,6 +55,9 @@ const Footer = () => {
               </li>
               <li>
                 <a href="www.google.com">Instagram</a>
+              </li>
+              <li>
+                <a href="www.google.com">Linkedin</a>
               </li>
               <li>
                 <a href="www.google.com">Youtube</a>

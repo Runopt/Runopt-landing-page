@@ -12,11 +12,12 @@
   background-blend-mode: multiply;
   background-repeat: repeat;
   background-position: top;
-  height: 600px;
+  min-height: 700px;
 
-        @media (max-width: 768px) {
-          margin-top: 100px;
-        }
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    min-height: 550px;
+  }
   .glowing-info-container {
     display: flex;
     justify-content: center;
@@ -111,11 +112,11 @@
     color: #dfdfdf;
     text-align: center;
     font-family: 'Inter Tight';
-    font-size: 36px;
+    font-size: 42px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    max-width: 700px;
+    max-width: 650px;
   }
 
   p {

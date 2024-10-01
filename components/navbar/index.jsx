@@ -49,20 +49,19 @@ const Navbar = () => {
                   Features
                 </li>
               </Link>
-              <Link href="/team">
-                <li className={router.pathname === '/team' ? 'active' : ''}>
-                  Team
-                </li>
-              </Link>
-              <Link href="#faqs">
+              <Link href="/#faqs">
                 <li className={router.pathname === '/faqs' ? 'active' : ''}>
                   FAQs
+                </li>
+              </Link>
+              <Link href="/team">
+                <li className={router.pathname === '/about-us' ? 'active' : ''}>
+                  About
                 </li>
               </Link>
             </ul>
           </div>
           <div className="cta-btn-wrapper">
-
             <a href="">Login</a>
             <button>
               <p>Sign up</p>
@@ -102,14 +101,15 @@ const Navbar = () => {
                 Features
               </li>
             </Link>
-            <Link href="/pricing">
-              <li className={router.pathname === '/pricing' ? 'active' : ''}>
-                Pricing
-              </li>
-            </Link>
+
             <Link href="/faqs">
               <li className={router.pathname === '/faqs' ? 'active' : ''}>
                 FAQs
+              </li>
+            </Link>
+            <Link href="/about-us">
+              <li className={router.pathname === '/about' ? 'active' : ''}>
+                About
               </li>
             </Link>
           </ul>

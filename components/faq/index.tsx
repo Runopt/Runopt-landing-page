@@ -66,9 +66,9 @@ const Faq: React.FC = () => {
       </div>
 
       <div className="faqs">
-        {faqs.map((faq, idx) => {
+        {faqs.map((faq) => {
           return (
-            <div className="faq" key={idx} onClick={() => toggleFAQ(faq.id)}>
+            <div className="faq" key={faq.id} onClick={() => toggleFAQ(faq.id)}>
               <div className="title">
                 <div className="question">{faq.question}</div>
 

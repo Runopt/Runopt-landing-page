@@ -57,7 +57,7 @@ const WhyUs = () => {
       <div className="benefits">
         {benefits.map((benefit) => {
           return (
-            <div className="benefit">
+            <div className="benefit" key={benefit.id}>
               <img src={benefit.icon} alt="" />
 
               <h5>{benefit.title}</h5>

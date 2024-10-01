@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '@/components/navbar';
 import TeamHero from '@/components/team-hero';
 import Team from '@/components/team';
+import Values from '@/components/values';
 import Footer from '@/components/footer';
 const team = () => {
   return (
@@ -10,6 +11,7 @@ const team = () => {
 
       <TeamHero />
 
+      <Values />
       <Team />
       <Footer />
     </div>

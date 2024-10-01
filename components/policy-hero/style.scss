@@ -1,0 +1,79 @@
+.privacy-hero-container {
+  background: url(/images/icons/meet-team-grid.svg);
+  min-height: 250px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    padding: 0 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(/images/icons/grid-mobile.svg);
+    max-height: 200px;
+    background-position: center center;
+  }
+
+  .text {
+    padding: 100px 050px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+      position: relative;
+      text-align: center;
+      font-family: 'Inter Tight';
+      color: #faf9f7;
+      font-size: 54px;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 130%;
+      text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.1);
+
+
+      @media (max-width: 1224px) {
+        font-size: 58px;
+        transition: all 0.2s linear;
+
+        img {
+          width: 150px;
+        }
+      }
+      @media (max-width: 1024px) {
+        font-size: 54px;
+      }
+      @media (max-width: 768px) {
+        font-size: 28px;
+        line-height: 150%;
+
+        img {
+          width: 90px;
+        }
+      }
+    }
+    p {
+      margin-top: 0.5rem;
+      text-align: center;
+      width: 100%;
+      max-width: 850px;
+      font-family: 'satoshi-medium';
+      color: #c5c5c5;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 180%;
+      
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 28px;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

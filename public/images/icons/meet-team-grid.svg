@@ -1,4 +1,4 @@
-<svg width="2211" height="617" viewBox="0 0 2211 617" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="2211" height="779" viewBox="0 0 2211 779" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.3" clip-path="url(#clip0_1545_3535)">
 <g opacity="0.5">
 <line y1="25.0752" x2="3597.16" y2="25.0752" stroke="#DCDCDC"/>
@@ -7,6 +7,7 @@
 <line y1="374.8" x2="3597.16" y2="374.8" stroke="#DCDCDC"/>
 <line y1="491.374" x2="3597.16" y2="491.374" stroke="#DCDCDC"/>
 <line y1="607.949" x2="3597.16" y2="607.949" stroke="#DCDCDC"/>
+<line y1="724.523" x2="3597.16" y2="724.523" stroke="#DCDCDC"/>
 </g>
 <g opacity="0.5">
 <line x1="1274.5" y1="-1099.13" x2="1274.5" y2="3474.34" stroke="#DCDCDC"/>
@@ -34,7 +35,7 @@
 </g>
 <defs>
 <clipPath id="clip0_1545_3535">
-<rect width="2211" height="617" fill="white"/>
+<rect width="2211" height="779" fill="white"/>
 </clipPath>
 </defs>
 </svg>

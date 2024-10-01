@@ -1,19 +1,26 @@
 .tean-hero-container {
   background: url(/images/icons/meet-team-grid.svg);
-  min-height: 400px;
+  height: 350px;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-
+  @media (max-width: 768px) {
+    padding: 0 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(/images/icons/grid-mobile.svg);
+    max-height: 200px;
+    background-position: center center;
+  }
   h3 {
     position: relative;
     text-align: center;
     font-family: 'Inter Tight';
     color: #faf9f7;
-    font-size: 64px;
+    font-size: 54px;
     font-weight: 600;
     font-style: normal;
     line-height: 130%;
@@ -22,10 +29,13 @@
     text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.1);
 
     span {
-      background: var(
-        --grad,
-        linear-gradient(255deg, #355be0 0%, #b945cc 100%)
+      background: linear-gradient(
+        255deg,
+        #7842f5 0%,
+        #8f72b7 55.5%,
+        #cb7df5 100%
       );
+
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

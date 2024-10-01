@@ -124,7 +124,7 @@
       background: #20202019;
       border: 1px solid #ffffff0d;
       margin-top: 36px;
-      padding: 36px;
+      padding: 42px 36px;
 
       &:hover {
         background: linear-gradient(
@@ -140,7 +140,7 @@
         color: $whiteTextPrimary;
         font-family: 'Inter Tight';
         font-weight: 500;
-        font-size: 22px;
+        font-size: 24px;
         font-style: normal;
         margin-top: 1.5rem;
       }
@@ -153,8 +153,8 @@
         line-height: 28px;
       }
       button {
-        margin-top: 1.5rem;
-        padding: 12px 42px;
+        margin-top: 1rem;
+        padding: 0.8rem 1rem;
         border-radius: 4px;
         background: var(
           --grad,

@@ -24,7 +24,7 @@ const Team = () => {
       id: 6,
       img: '../images/team/rohan.png',
       name: 'Rohan Bhalla',
-      jobTitle: 'Founding Engineer Engineer',
+      jobTitle: 'Founding Engineer',
     },
   ];
 
@@ -37,7 +37,7 @@ const Team = () => {
     },
     {
       id: 5,
-      img: '../images/team/Kay.png',
+      img: '../images/team/kay.jpg',
       name: 'Olakunbi Olabode',
       jobTitle: 'UI/UX Engineer',
     },
@@ -57,6 +57,22 @@ const Team = () => {
   ];
   return (
     <div className="team-container">
+      <div className="title-text">
+        <div className="title-big">
+          <div className="glowing-line-container">
+            <div className="glowing-line"></div>
+          </div>
+          Meet the team
+          <div className="glowing-line-container">
+            <div className="glowing-line"></div>
+          </div>
+        </div>
+
+        <div className="desc">
+          We bring a wealth of experience from a wide range of backgrounds
+        </div>
+      </div>
+
       <div className="founders">
         {founders.map((member) => {
           return (

@@ -97,26 +97,25 @@
     margin: 0 auto;
 
     @media (max-width: 768px) {
-      gap: 1.5rem;
+      gap: 1rem;
     }
   }
 
   .footer__brand {
-    max-width: 400px;
+    max-width: 350px;
     margin-bottom: 44px;
 
     @media (max-width: 768px) {
       margin-bottom: 32px;
     }
     .footer__logo {
-      // width: 60px;
       margin-bottom: 30px;
       width: 120px;
     }
 
     .footer__description {
       font-family: 'satoshi-regular';
-      color: #efefef;
+      color: #a7a7a7;
       font-size: 16px;
       line-height: 170%;
       margin-bottom: 10px;
@@ -131,19 +130,18 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    flex-basis: 50%;
 
     @media (max-width: 768px) {
       justify-content: flex-start;
+      flex-direction: column;
       width: 100%;
       flex-basis: 100%;
+      gap: 1rem;
     }
 
     .footer__column {
       margin-right: 30px;
       margin-bottom: 20px;
-      // width: 100%;
-      // flex-basis: 50%;
 
       .footer__title {
         font-family: 'satoshi-medium';
