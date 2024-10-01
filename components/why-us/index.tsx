@@ -30,7 +30,7 @@ const WhyUs = () => {
       id: 5,
       icon: '../images/icons/enhance.svg',
       title: 'Enhance Decision Making',
-      desc: 'RunOpt’s advanced analytics provide insights into design choices, enabling engineers to make data-driven decisions with confidence.',
+      desc: 'Runopt’s advanced analytics provide insights into design choices, enabling engineers to make data-driven decisions with confidence.',
     },
     {
       id: 6,
