@@ -54,7 +54,7 @@ const Navbar = () => {
                   FAQs
                 </li>
               </Link>
-              <Link href="/team">
+              <Link href="/about-us">
                 <li className={router.pathname === '/about-us' ? 'active' : ''}>
                   About
                 </li>

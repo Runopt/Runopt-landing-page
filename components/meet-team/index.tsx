@@ -19,7 +19,7 @@ const MeetTeam = () => {
         drive smarter, sustainable solutions for the future.
       </p>
 
-      <Link href="./team">
+      <Link href="./about-us">
         <button>
           Learn more
           <img src="../images/icons/arrow-right.svg" alt="" />
