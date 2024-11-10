@@ -51,16 +51,18 @@ const Footer = () => {
             <h3 className="footer__title">Social Media</h3>
             <ul className="footer__list">
               <li>
-                <a href="www.google.com">X / Twitter</a>
+                <a href="https://x.com/runopt78921?s=21">X / Twitter</a>
               </li>
               <li>
-                <a href="www.google.com">Instagram</a>
+                <a href="https://www.instagram.com/runopt.co/profilecard/?igsh=MW9hcWtnYWR3Ync1Zg==">
+                  Instagram
+                </a>
               </li>
               <li>
-                <a href="www.google.com">Linkedin</a>
+                <a href="https://www.linkedin.com/company/runopt/">Linkedin</a>
               </li>
               <li>
-                <a href="www.google.com">Youtube</a>
+                <a href="https://youtube.com/@Runopt">Youtube</a>
               </li>
             </ul>
           </div>
