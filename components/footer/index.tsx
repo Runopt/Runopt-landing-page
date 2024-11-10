@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const Footer = () => {
   return (
     <section className="footer">
@@ -49,22 +49,36 @@ const Footer = () => {
           </div>
           <div className="footer__column">
             <h3 className="footer__title">Social Media</h3>
-            <ul className="footer__list">
-              <li>
-                <a href="https://x.com/runopt78921?s=21">X / Twitter</a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/runopt.co/profilecard/?igsh=MW9hcWtnYWR3Ync1Zg==">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/runopt/">Linkedin</a>
-              </li>
-              <li>
-                <a href="https://youtube.com/@Runopt">Youtube</a>
-              </li>
-            </ul>
+            <div>
+              <ul className="footer__list">
+                <li>
+                  <Link href="https://x.com/runopt78921?s=21" target="_blank">
+                    X / Twitter
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.instagram.com/runopt.co/profilecard/?igsh=MW9hcWtnYWR3Ync1Zg=="
+                    target="_blank"
+                  >
+                    Instagram
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://www.linkedin.com/company/runopt/"
+                    target="_blank"
+                  >
+                    Linkedin
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://youtube.com/@Runopt" target="_blank">
+                    Youtube
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
