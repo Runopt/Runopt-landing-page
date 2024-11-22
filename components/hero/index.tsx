@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Hero = () => {
@@ -25,11 +26,24 @@ const Hero = () => {
         </div>
 
         <div className="hero-cta">
-          <button id="join-waitlist">Join the waitlist</button>
-          <button id="try-zonewise">
-            Try Zonewise
-            <img src="../images/icons/ai.svg" alt="" />
-          </button>
+          <Link
+            href="https://forms.gle/vtNmkbT1BV5kayz68"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button id="join-waitlist">Join the waitlist</button>
+          </Link>
+
+          <Link
+            href="https://forms.gle/vtNmkbT1BV5kayz68"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button id="try-zonewise">
+              Try Zonewise
+              <img src="../images/icons/ai.svg" alt="" />
+            </button>
+          </Link>
         </div>
         {/* <div className="cta-wrapper">
           <input type="email" name="" placeholder="Enter your email" id="" />
