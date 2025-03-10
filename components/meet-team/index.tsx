@@ -12,10 +12,10 @@ const MeetTeam = () => {
         </div>
       </div>
 
-      <h3>Become the global leader in <br/> digital civil engineering solutions</h3>
+      <h3>Become the global leader in <br/> digital land development solutions</h3>
 
       <p>
-        Our team is dedicated to revolutionizing civil engineering process with AI tools that
+        Our team is dedicated to revolutionizing land development process with AI tools that
         drive smarter, sustainable solutions for the future.
       </p>
 

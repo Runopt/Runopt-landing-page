@@ -62,9 +62,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="cta-btn-wrapper">
-            <a href="">Login</a>
+            {/* <a href="">Contact us</a> */}
             <button>
-              <p>Sign up</p>
+              <p>Contact us</p>
             </button>
           </div>
         </div>
@@ -114,12 +114,12 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className="cta-btn-wrapper">
-            <Link href="/login">
+            {/* <Link href="/login">
               <div className="login">Login</div>
-            </Link>
+            </Link> */}
             <Link href="/signup">
               <div className="sign-up">
-                <p>Sign Up</p>
+                <p>Contact us</p>
               </div>
             </Link>
           </div>

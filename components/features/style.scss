@@ -153,6 +153,11 @@
           line-height: 170%;
         }
 
+        @media (min-width: 767px) {
+          .dots {
+            display: none;
+          }
+        }
         @media (max-width: 768px) {
           padding: 24px 24px;
 
@@ -172,7 +177,6 @@
 
         .show {
           display: inline;
-        
         }
 
         .read-more {
@@ -187,7 +191,7 @@
           -webkit-text-fill-color: transparent;
           cursor: pointer;
           margin-left: 4px;
-          margin-top: .5rem;
+          margin-top: 0.5rem;
         }
       }
     }

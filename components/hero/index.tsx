@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
+import VideoPopup from '../video-demo';
 const Hero = () => {
   return (
     <div className="hero-container" id="home">
@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="glowing-info-container">
           <div className="info-glow"></div>
           <div className="info">
-            <p>zonewise launching</p>
+            <p>Real Estate Package</p>
             <span>soon 🥳</span>
           </div>
         </div>
@@ -16,11 +16,11 @@ const Hero = () => {
         <div className="title">
           AI-powered <br />
           <span>
-            <div> software for civil site</div> design
+            <div> software for land development</div>
           </span>
         </div>
         <div className="desc">
-          Runopt is transforming civil engineering with an integrated design
+          Runopt is transforming land development with an integrated design
           optimization tool, delivering cost-effective, sustainable designs in
           minutes.
         </div>
@@ -40,7 +40,7 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <button id="try-zonewise">
-              Try Zonewise
+              Contact us
               <img src="../images/icons/ai.svg" alt="" />
             </button>
           </Link>
@@ -54,12 +54,16 @@ const Hero = () => {
       </div>
 
       <div className="desktop-img">
-        <img src="../images/hero-img.png" alt="" />
+        {/* <img src="../images/hero-img.png" alt="" /> */}
+        <VideoPopup
+          videoId="TuGwacoYt7Q"
+          thumbnail="../images/demo-thumbnail.png" 
+        />
       </div>
 
-      <div className="mobile-img">
+      {/* <div className="mobile-img">
         <img src="../images/hero-img-mobile.png" alt="" />
-      </div>
+      </div> */}
     </div>
   );
 };

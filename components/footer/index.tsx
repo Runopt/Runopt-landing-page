@@ -26,7 +26,7 @@ const Footer = () => {
             className="footer__logo"
           />
           <p className="footer__description">
-            Become the global leader in digital civil engineering solutions
+            Become the global leader in digital land development solutions
           </p>
         </div>
         <div className="footer__links">

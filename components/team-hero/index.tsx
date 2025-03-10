@@ -7,7 +7,7 @@ const TeamHero = () => {
         About
         <span> Us</span>
       </h3>
-      <p>Revolutionize the civil design process</p>
+      <p>Revolutionize the land development design process</p>
     </div>
   );
 };

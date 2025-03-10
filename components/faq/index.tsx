@@ -16,12 +16,12 @@ const Faq: React.FC = () => {
       id: 0,
       question: 'What is Runopt?',
       answer:
-        'Runopt is an innovative software solution that integrates layout, grading, drainage, and utilities into one large optimization problem driven by artificial intelligence. It aims to revolutionize the civil engineering design process by drastically increasing design speed, reducing costs, and mitigating environmental impacts of development.',
+        'Runopt is an innovative software solution that integrates layout, grading, drainage, and utilities into one large optimization problem driven by artificial intelligence. It aims to revolutionize the land development design process by drastically increasing design speed, reducing costs, and mitigating environmental impacts of development.',
     },
     {
       id: 1,
       question:
-        'How does Runopt differ from existing civil engineering software like autograder?',
+        'How does Runopt differ from existing land development software like autograder?',
       answer:
         'Runopt integrates all components of design into one optimization problem. There are cases in which saving on cut and fill can increase costs in other aspects of construction: Runopt identifies this. This allows for synergies between variables and eliminates the need for time-consuming manual iterations.',
     },

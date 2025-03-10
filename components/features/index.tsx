@@ -46,7 +46,8 @@ const Features: React.FC = () => {
             <p>
               Let Runopt handle the zoning complexities and you could focus on
               innovative design.
-              <br /> {!expanded.zone && '... '}
+              <br />
+              <div className="dots"> {!expanded.zone && '... '}</div>
               <span className={expanded.zone ? 'show' : 'hide'}>
                 - Use natural language to ask AI for interpretations of local
                 zoning regulations <br />- Instant compliance checks for
@@ -71,12 +72,12 @@ const Features: React.FC = () => {
             <p>
               Experience cutting-edge civil design where efficiency meets
               excellence <br />
-              {!expanded.optimize && '... '}
+              <div className="dots">{!expanded.optimize && '... '}</div>
               <span className={expanded.optimize ? 'show' : 'hide'}>
-                - Up to 30% reduction in design time <br />
-                - Minimized environmental impact with smart earthwork management{' '}
-                <br />- Unlock synergies between variables for better outcomes
-                than focusing on one field 
+                - Up to 30% reduction in design time <br />- Minimized
+                environmental impact with smart earthwork management <br />-
+                Unlock synergies between variables for better outcomes than
+                focusing on one field
               </span>
               <span
                 className="read-more"
@@ -99,7 +100,7 @@ const Features: React.FC = () => {
             <p>
               Transform your approach from intuition-based to insight-driven
               with Runopt. <br />
-              {!expanded.dataDriven && '... '}
+              <div className="dots"> {!expanded.dataDriven && '... '}</div>
               <span className={expanded.dataDriven ? 'show' : 'hide'}>
                 - Enhanced project outcomes through holistic site optimization{' '}
                 <br />- Explore multiple design scenarios in minutes, not days
@@ -122,7 +123,7 @@ const Features: React.FC = () => {
             <h5>Customizable Professional Reporting</h5>
             <p>
               Generate powerful reports that speak for your designs. <br />
-              {!expanded.reporting && '... '}
+              <div className="dots">{!expanded.reporting && '... '}</div>
               <span className={expanded.reporting ? 'show' : 'hide'}>
                 - Adapt presentation style to different audiences - from
                 executives to technical reviewers <br />- Help with transparent,
