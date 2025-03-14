@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import CalendlyPopup from '../calendly';
 interface FAQItem {
   id: number;
   question: string;
@@ -92,7 +92,7 @@ const Faq: React.FC = () => {
           <img src="./images/contact.svg" alt="" />
           <h4>Still Got Questions?</h4>
           <p>Can’t find the answer you are looking for?</p>
-          <button>Contact Us</button>
+            <CalendlyPopup />
         </div>
       </div>
     </div>

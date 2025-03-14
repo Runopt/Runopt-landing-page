@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+
+import CalendlyPopup from '../calendly';
 // import Logo from '@/components/assets/logo.svg'
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -63,9 +65,10 @@ const Navbar = () => {
           </div>
           <div className="cta-btn-wrapper">
             {/* <a href="">Contact us</a> */}
-            <button>
+            {/* <button>
               <p>Contact us</p>
-            </button>
+            </button> */}
+            <CalendlyPopup />
           </div>
         </div>
       </div>

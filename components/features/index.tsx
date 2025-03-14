@@ -47,7 +47,7 @@ const Features: React.FC = () => {
               Let Runopt handle the zoning complexities and you could focus on
               innovative design.
               <br />
-              <div className="dots"> {!expanded.zone && '... '}</div>
+              <span className="dots"> {!expanded.zone && '... '}</span>
               <span className={expanded.zone ? 'show' : 'hide'}>
                 - Use natural language to ask AI for interpretations of local
                 zoning regulations <br />- Instant compliance checks for
@@ -72,7 +72,7 @@ const Features: React.FC = () => {
             <p>
               Experience cutting-edge civil design where efficiency meets
               excellence <br />
-              <div className="dots">{!expanded.optimize && '... '}</div>
+              <span className="dots">{!expanded.optimize && '... '}</span>
               <span className={expanded.optimize ? 'show' : 'hide'}>
                 - Up to 30% reduction in design time <br />- Minimized
                 environmental impact with smart earthwork management <br />-
@@ -100,7 +100,7 @@ const Features: React.FC = () => {
             <p>
               Transform your approach from intuition-based to insight-driven
               with Runopt. <br />
-              <div className="dots"> {!expanded.dataDriven && '... '}</div>
+              <span className="dots"> {!expanded.dataDriven && '... '}</span>
               <span className={expanded.dataDriven ? 'show' : 'hide'}>
                 - Enhanced project outcomes through holistic site optimization{' '}
                 <br />- Explore multiple design scenarios in minutes, not days
@@ -123,7 +123,7 @@ const Features: React.FC = () => {
             <h5>Customizable Professional Reporting</h5>
             <p>
               Generate powerful reports that speak for your designs. <br />
-              <div className="dots">{!expanded.reporting && '... '}</div>
+              <span className="dots">{!expanded.reporting && '... '}</span>
               <span className={expanded.reporting ? 'show' : 'hide'}>
                 - Adapt presentation style to different audiences - from
                 executives to technical reviewers <br />- Help with transparent,

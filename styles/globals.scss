@@ -43,6 +43,7 @@ body {
   font-weight: normal;
   background: $bgBlack;
   color: $whiteTextPrimary;
+  position: relative;
 }
 
 input,
@@ -52,5 +53,64 @@ button {
   border: none;
 }
 button {
+  cursor: pointer;
+}
+
+
+.calendly-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 9999999999999 !important;
+  overflow: visible !important;
+  background: rgba(0, 0, 0, 0.5) !important; /* Ensure overlay is visible */
+}
+
+.calendly-popup {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  z-index: 10000 !important;
+  display: flex !important; /* Ensure inner content aligns properly */
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.calendly-popup-content {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 90vh !important; /* Limit height but allow scrolling */
+  max-width: 90vw !important; /* Limit width for better fit */
+  margin: auto !important; /* Center the content */
+  overflow-y: auto !important; /* Allow scrolling if content overflows */
+}
+
+// .calendly-close-overlay {
+//   display: block !important; /* Ensure close button overlay is visible */
+//   z-index: 10001 !important;
+//   position: absolute !important;
+//   right: 0 !important;
+// }
+
+.calendly-popup-close {
+  position: absolute !important;
+  left: 50% ;
+  top: 4rem;
+  background: #F35454;
+  color: #FFF !important;
+  width: 32px;
+  height: 32px;
+  display: flex !important;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 999999999;
   cursor: pointer;
 }

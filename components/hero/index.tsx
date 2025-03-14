@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import VideoPopup from '../video-demo';
+import CalendlyPopup from '../calendly';
 const Hero = () => {
   return (
     <div className="hero-container" id="home">
@@ -34,7 +35,7 @@ const Hero = () => {
             <button id="join-waitlist">Join the waitlist</button>
           </Link>
 
-          <Link
+          {/* <Link
             href="https://forms.gle/vtNmkbT1BV5kayz68"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,7 +44,8 @@ const Hero = () => {
               Contact us
               <img src="../images/icons/ai.svg" alt="" />
             </button>
-          </Link>
+          </Link> */}
+          <CalendlyPopup />
         </div>
         {/* <div className="cta-wrapper">
           <input type="email" name="" placeholder="Enter your email" id="" />
@@ -57,7 +59,7 @@ const Hero = () => {
         {/* <img src="../images/hero-img.png" alt="" /> */}
         <VideoPopup
           videoId="TuGwacoYt7Q"
-          thumbnail="../images/demo-thumbnail.png" 
+          thumbnail="../images/demo-thumbnail.png"
         />
       </div>
 
