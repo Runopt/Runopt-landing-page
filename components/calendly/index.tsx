@@ -2,32 +2,14 @@
 
 import { useEffect, useState, useCallback } from 'react';
 
-// Define Calendly interface
-interface CalendlyInterface {
-  initPopupWidget: (options: { url: string }) => void;
-  closePopupWidget: () => void;
-}
-
-// Extend Window interface
-declare global {
-  interface Window {
-    Calendly: CalendlyInterface;
-  }
-}
 
 const CalendlyPopup: React.FC = () => {
   const [scriptLoaded, setScriptLoaded] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const CALENDLY_URL = 'https://calendly.com/skyerunopt';
 
-  // Load the Calendly script
   useEffect(() => {
-    // Check if script is already loaded
-    if (
-      document.querySelector(
-        'script[src="https://assets.calendly.com/assets/external/widget.js"]',
-      )
-    ) {
+    if (document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')) {
       setScriptLoaded(true);
       return;
     }
@@ -36,11 +18,10 @@ const CalendlyPopup: React.FC = () => {
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
     script.onload = () => setScriptLoaded(true);
-    script.onerror = () =>
-      console.error('Failed to load Calendly widget script');
+    script.onerror = () => console.error('Failed to load Calendly widget script');
     document.head.appendChild(script);
 
-    // Add CSS to fix close button visibility
+
     const style = document.createElement('style');
     style.textContent = `
       /* Ensure the close button has content and is properly sized */
@@ -74,18 +55,14 @@ const CalendlyPopup: React.FC = () => {
       .calendly-popup-close::after {
         transform: rotate(-45deg) !important;
       }
-      
-      /* Ensure the popup has proper z-index */
-      .calendly-overlay {
-        z-index: 9999 !important;
-      }
     `;
     document.head.appendChild(style);
 
-    // Cleanup function
+   
     return () => {
-      if (window.Calendly) {
-        window.Calendly.closePopupWidget();
+      const calendlyObj = (window as any).Calendly;
+      if (calendlyObj && typeof calendlyObj.closePopupWidget === 'function') {
+        calendlyObj.closePopupWidget();
       }
       if (document.head.contains(style)) {
         document.head.removeChild(style);
@@ -93,18 +70,18 @@ const CalendlyPopup: React.FC = () => {
     };
   }, []);
 
-  // Enhanced function to add close button manually if needed
+  
   const ensureCloseButtonVisible = useCallback(() => {
     setTimeout(() => {
       const popupClose = document.querySelector('.calendly-popup-close');
-
+      
       if (popupClose instanceof HTMLElement) {
-        // Apply styles directly to the element
+
         popupClose.style.display = 'block';
         popupClose.style.visibility = 'visible';
         popupClose.style.opacity = '1';
-
-        // If the close button has no content, add an X
+        
+        
         if (!popupClose.innerHTML.trim()) {
           popupClose.innerHTML = `
             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
@@ -117,20 +94,22 @@ const CalendlyPopup: React.FC = () => {
     }, 1000);
   }, []);
 
-  // Open Calendly popup
+
   const openCalendlyPopup = useCallback(() => {
     if (!scriptLoaded) {
       setLoading(true);
       return;
     }
-
+    
     try {
-      if (typeof window !== 'undefined' && window.Calendly) {
-        window.Calendly.initPopupWidget({
+
+      const calendlyObj = (window as any).Calendly;
+      if (typeof window !== 'undefined' && calendlyObj && typeof calendlyObj.initPopupWidget === 'function') {
+        calendlyObj.initPopupWidget({
           url: CALENDLY_URL,
         });
+        
 
-        // Ensure close button is visible
         ensureCloseButtonVisible();
       }
     } catch (error) {
@@ -140,12 +119,13 @@ const CalendlyPopup: React.FC = () => {
     }
   }, [scriptLoaded, ensureCloseButtonVisible]);
 
-  // Handle opening when script loads after button click
   useEffect(() => {
     if (loading && scriptLoaded) {
       openCalendlyPopup();
     }
   }, [loading, scriptLoaded, openCalendlyPopup]);
+
+ 
 
   return (
     <div className="calendly-container">
