@@ -39,7 +39,7 @@ const Team = () => {
       id: 5,
       img: '../images/team/kay.jpg',
       name: 'Olakunbi Olabode',
-      jobTitle: 'UI/UX Engineer',
+      jobTitle: 'Frontend Engineer',
     },
 
     {
@@ -51,8 +51,8 @@ const Team = () => {
     {
       id: 8,
       img: '../images/team/Sina.png',
-      name: 'Sina Fallah Ardizi',
-      jobTitle: 'Software Engineer',
+      name: 'Akshat Saini',
+      jobTitle: 'Founding Engineer',
     },
   ];
   return (

@@ -47,14 +47,14 @@ const VideoPopup: React.FC<VideoPopupProps> = ({ videoId, thumbnail }) => {
               >
                 <path
                   d="M8.51471 26.0005L25.4853 9.02993"
-                  stroke="white"
+                  stroke="red"
                   stroke-width="2"
                   stroke-linecap="square"
                   stroke-linejoin="round"
                 />
                 <path
                   d="M8.51473 9.02993L25.4853 26.0005"
-                  stroke="white"
+                  stroke="red"
                   stroke-width="2"
                   stroke-linecap="square"
                   stroke-linejoin="round"
