@@ -50,7 +50,7 @@ const Team = () => {
     },
     {
       id: 8,
-      img: '../images/team/Sina.png',
+      img: '../images/team/akshat.png',
       name: 'Akshat Saini',
       jobTitle: 'Founding Engineer',
     },
