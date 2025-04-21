@@ -1,7 +1,34 @@
 import React from 'react';
 
 const Team = () => {
-  const founders = [
+  // const founders = [
+  //   {
+  //     id: 1,
+  //     img: '../images/team/Quinn.png',
+  //     name: 'Quinn Gangadharan',
+  //     jobTitle: 'CEO of Runopt',
+  //   },
+  //   {
+  //     id: 2,
+  //     img: '../images/team/Skye.png',
+  //     name: 'Skye Zhou',
+  //     jobTitle: 'COO of Runopt',
+  //   },
+  //   // {
+  //   //   id: 3,
+  //   //   img: '../images/team/Rahul.jpg',
+  //   //   name: 'Rahul Pillalamarri',
+  //   //   jobTitle: 'CTO of Runopt',
+  //   // },
+  //   {
+  //     id: 3,
+  //     img: '../images/team/rohan.png',
+  //     name: 'Rohan Bhalla',
+  //     jobTitle: 'Founding Engineer',
+  //   },
+  // ];
+
+  const teamMembers = [
     {
       id: 1,
       img: '../images/team/Quinn.png',
@@ -10,25 +37,22 @@ const Team = () => {
     },
     {
       id: 2,
-      img: '../images/team/Skye.jpg',
+      img: '../images/team/Skye.png',
       name: 'Skye Zhou',
       jobTitle: 'COO of Runopt',
     },
+    // {
+    //   id: 3,
+    //   img: '../images/team/Rahul.jpg',
+    //   name: 'Rahul Pillalamarri',
+    //   jobTitle: 'CTO of Runopt',
+    // },
     {
       id: 3,
-      img: '../images/team/Rahul.jpg',
-      name: 'Rahul Pillalamarri',
-      jobTitle: 'CTO of Runopt',
-    },
-    {
-      id: 6,
       img: '../images/team/rohan.png',
       name: 'Rohan Bhalla',
       jobTitle: 'Founding Engineer',
     },
-  ];
-
-  const teamMembers = [
     {
       id: 4,
       img: '../images/team/Vikrant.png',
@@ -73,15 +97,12 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="founders">
+      {/* <div className="founders">
         {founders.map((member) => {
           return (
             <div className="member" key={member.id}>
               <img src={member.img} alt="" />
               <div className="title">
-                {/* <a href="www.google.com" title="linkedin">
-                  <img src="../images/icons/linkedin.svg" alt="" />
-                </a> */}
               </div>
               <h5>{member.name}</h5>
 
@@ -89,7 +110,7 @@ const Team = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
 
       <div className="members">
         {teamMembers.map((member) => {
