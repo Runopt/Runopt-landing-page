@@ -9,8 +9,8 @@ const Hero = () => {
         <div className="glowing-info-container">
           <div className="info-glow"></div>
           <div className="info">
-            <p>Real Estate Package</p>
-            <span>soon 🥳</span>
+            <p>Learn about our Developer Package</p>
+            {/* <span>soon 🥳</span> */}
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button id="join-waitlist">Join the waitlist</button>
+            <button id="join-waitlist">Get Zoning Insights</button>
           </Link>
 
           {/* <Link
@@ -55,19 +55,39 @@ const Hero = () => {
         </div> */}
       </div>
 
-      <div className="desktop-img">
-        {/* <img src="../images/hero-img.png" alt="" /> */}
-        <VideoPopup
-          videoId="TuGwacoYt7Q"
-          thumbnail="../images/demo-thumbnail.png"
-        />
+      <div className="demo-container">
+        <iframe
+          src="https://app.supademo.com/embed/cmbh50syr5gonsn1r8hcc4ecc?embed_v=2"
+          loading="lazy"
+          title="Runopt Demo"
+          allow="clipboard-write"
+          allowFullScreen
+          style={{
+            border: 'none',
+            outline: 'none',
+            boxShadow: 'none',
+            margin: '0',
+            padding: '0',
+          }}
+        ></iframe>
       </div>
-
-      {/* <div className="mobile-img">
-        <img src="../images/hero-img-mobile.png" alt="" />
-      </div> */}
     </div>
   );
 };
 
 export default Hero;
+{
+  /* <div style="position: relative; box-sizing: content-box; max-height: 80vh; max-height: 80svh; width: 100%; aspect-ratio: 2.078643578643579; padding: 40px 0 40px 0;">
+  <iframe
+    src="https://app.supademo.com/embed/cmbh50syr5gonsn1r8hcc4ecc?embed_v=2"
+    loading="lazy"
+    title="Runopt Demo"
+    allow="clipboard-write"
+    frameborder="0"
+    webkitallowfullscreen="true"
+    mozallowfullscreen="true"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  ></iframe>
+</div>; */
+}

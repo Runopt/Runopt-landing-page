@@ -52,6 +52,8 @@ const Features: React.FC = () => {
                 - Use natural language to ask AI for interpretations of local
                 zoning regulations <br />- Instant compliance checks for
                 setbacks, parking restrictions, and more
+                <br /> - Have an interactive zoning map to check zoning
+                ordinances for specific buildings and
               </span>
               <span
                 className="read-more"
@@ -63,6 +65,62 @@ const Features: React.FC = () => {
           </div>
         </div>
 
+        <div className="feature" id="dataDriven">
+          <div className="illustration">
+            <img src="../images/data.png" alt="" />
+          </div>
+          <div className="desc">
+            <h5>Data-Driven Feasibility Insights</h5>
+            <p>
+              Make smarter site decisions with Runopt’s real estate feasibility
+              analysis. <br />
+              <span className="dots"> {!expanded.dataDriven && '... '}</span>
+              <span className={expanded.dataDriven ? 'show' : 'hide'}>
+                -Accelerate project evaluation with fast, accurate site
+                feasibility checks
+                <br />- Confidently explore multiple design scenarios to
+                maximize site potential
+                <br />- Reduce costly guesswork and speed up early-stage
+                decision making
+              </span>
+              <span
+                className="read-more"
+                onClick={() => handleReadMore('dataDriven')}
+              >
+                {expanded.dataDriven ? ' Read Less' : ' Read More'}
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="features">
+        <div className="feature" id="reporting">
+          <div className="illustration">
+            <img src="../images/reporting.png" alt="" />
+          </div>
+          <div className="desc">
+            <h5>Customizable Reports for Non-Engineers</h5>
+            <p>
+              Translate complex civil design data into clear, accessible
+              insights. <br />
+              <span className="dots">{!expanded.reporting && '... '}</span>
+              <span className={expanded.reporting ? 'show' : 'hide'}>
+                - Simplify technical details for easy understanding by real
+                estate teams and stakeholders
+                <br />
+                -Bridge the knowledge gap to make conversations with civil
+                engineers more productive
+              </span>
+              <span
+                className="read-more"
+                onClick={() => handleReadMore('reporting')}
+              >
+                {expanded.reporting ? 'Read Less' : 'Read More'}
+              </span>
+            </p>
+          </div>
+        </div>
         <div className="feature" id="optimize">
           <div className="illustration">
             <img src="../images/grading.png" alt="" />
@@ -84,56 +142,6 @@ const Features: React.FC = () => {
                 onClick={() => handleReadMore('optimize')}
               >
                 {expanded.optimize ? ' Read Less' : ' Read More'}
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="features">
-        <div className="feature" id="dataDriven">
-          <div className="illustration">
-            <img src="../images/data.png" alt="" />
-          </div>
-          <div className="desc">
-            <h5>Data-Driven Design Recommendations</h5>
-            <p>
-              Transform your approach from intuition-based to insight-driven
-              with Runopt. <br />
-              <span className="dots"> {!expanded.dataDriven && '... '}</span>
-              <span className={expanded.dataDriven ? 'show' : 'hide'}>
-                - Enhanced project outcomes through holistic site optimization{' '}
-                <br />- Explore multiple design scenarios in minutes, not days
-              </span>
-              <span
-                className="read-more"
-                onClick={() => handleReadMore('dataDriven')}
-              >
-                {expanded.dataDriven ? ' Read Less' : ' Read More'}
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <div className="feature" id="reporting">
-          <div className="illustration">
-            <img src="../images/reporting.png" alt="" />
-          </div>
-          <div className="desc">
-            <h5>Customizable Professional Reporting</h5>
-            <p>
-              Generate powerful reports that speak for your designs. <br />
-              <span className="dots">{!expanded.reporting && '... '}</span>
-              <span className={expanded.reporting ? 'show' : 'hide'}>
-                - Adapt presentation style to different audiences - from
-                executives to technical reviewers <br />- Help with transparent,
-                data-rich communications
-              </span>
-              <span
-                className="read-more"
-                onClick={() => handleReadMore('reporting')}
-              >
-                {expanded.reporting ? 'Read Less' : 'Read More'}
               </span>
             </p>
           </div>

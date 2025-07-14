@@ -170,6 +170,9 @@
         }
       }
 
+      .read-more {
+        display: none;
+      }
       @media (max-width: 768px) {
         .hide {
           display: none;
@@ -180,6 +183,7 @@
         }
 
         .read-more {
+          display: flex;
           background: linear-gradient(
             255deg,
             #7842f5 0%,
