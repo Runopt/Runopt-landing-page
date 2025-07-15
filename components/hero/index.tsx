@@ -8,10 +8,15 @@ const Hero = () => {
       <div className="heading-wrapper">
         <div className="glowing-info-container">
           <div className="info-glow"></div>
-          <div className="info">
+          <Link
+            href=" https://core.runopt.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="info"
+          >
             <p>Learn about our Developer Package</p>
             {/* <span>soon 🥳</span> */}
-          </div>
+          </Link>
         </div>
 
         <div className="title">
