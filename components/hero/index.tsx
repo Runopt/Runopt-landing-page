@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="hero-cta">
           <Link
             // href="https://forms.gle/vtNmkbT1BV5kayz68"
-            href="https://core.runopt.co/zoning"
+            href="https://core.runopt.co/zoning-map"
             target="_blank"
             rel="noopener noreferrer"
           >
