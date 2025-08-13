@@ -77,7 +77,8 @@ const Navbar = () => {
         <div className={`heading-wrapper ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo-wrapper">
             <Image
-              src="../images/logo-mobile.png"
+              // src="../images/logo-mobile.png"
+              src="../images/logo-optimized.png"
               alt="Logo"
               width="106"
               height="56"
