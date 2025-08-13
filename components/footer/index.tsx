@@ -21,10 +21,8 @@ const Footer = () => {
       <div className="footer__container">
         <div className="footer__brand">
           <img
-            // src="../images/logo-mobile.png"
-            src="../images/logo-optimized.png"
-            // alt="fxbud logo"
-            alt="Runopt Logo"
+            src="../images/logo-mobile.png"
+            alt="fxbud logo"
             className="footer__logo"
           />
           <p className="footer__description">

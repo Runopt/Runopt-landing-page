@@ -35,8 +35,7 @@ const Navbar = () => {
         <div className="navbar-inner-wrapper">
           <div className="logo-wrapper">
             <Link href="/">
-              {/* <img src="/images/logo.svg" alt="Logo" /> */}
-              <img src="/images/logo-optimized.png" alt="Runopt Logo" />
+              <img src="/images/logo.svg" alt="Logo" />
             </Link>
           </div>
 
@@ -77,8 +76,7 @@ const Navbar = () => {
         <div className={`heading-wrapper ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo-wrapper">
             <Image
-              // src="../images/logo-mobile.png"
-              src="../images/logo-optimized.png"
+              src="../images/logo-mobile.png"
               alt="Logo"
               width="106"
               height="56"
