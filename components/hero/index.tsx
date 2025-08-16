@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="glowing-info-container">
           <div className="info-glow"></div>
           <Link
-            href=" https://core.runopt.co/"
+            href="https://core.runopt.co/"
             target="_blank"
             rel="noopener noreferrer"
             className="info"
