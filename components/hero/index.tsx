@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="glowing-info-container">
           <div className="info-glow"></div>
           <Link
-            href=" https://core.runopt.co/"
+            href="https://core.runopt.co/"
             target="_blank"
             rel="noopener noreferrer"
             className="info"
@@ -38,7 +38,15 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button id="join-waitlist">Get Zoning Insights</button>
+            <button 
+              id="join-waitlist"
+              data-gtm-track="zoning_insights_click"
+              data-gtm-category="cta"
+              data-gtm-action="click"
+              data-gtm-label="hero_zoning_insights"
+            >
+              Get Zoning Insights
+            </button>
           </Link>
 
           {/* <Link
