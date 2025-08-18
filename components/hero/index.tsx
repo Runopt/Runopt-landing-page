@@ -27,7 +27,10 @@ const Hero = () => {
                     <circle cx="17" cy="10" r="1" fill="currentColor"/>
                   </svg>
                 </div>
-                <span className="banner-text-chatbot">Chatbot</span>
+                <span className="banner-text-chatbot">
+                  <span className="desktop-text">chatbot</span>
+                  <span className="mobile-text">chatbot</span>
+                </span>
                 <span className="banner-text-colon">: </span>
                 <div className="banner-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
