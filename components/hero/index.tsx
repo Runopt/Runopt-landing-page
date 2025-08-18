@@ -59,7 +59,19 @@ const Hero = () => {
               <img src="../images/icons/ai.svg" alt="" />
             </button>
           </Link> */}
-          <CalendlyPopup />
+          {/* <CalendlyPopup /> */}
+          <Link
+            href="https://core.runopt.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              id="analyze-site-csv"
+              title="Analyze Site CSV (beta)"
+            >
+              Analyze Site CSV (Beta)
+            </button>
+          </Link>
         </div>
         {/* <div className="cta-wrapper">
           <input type="email" name="" placeholder="Enter your email" id="" />
