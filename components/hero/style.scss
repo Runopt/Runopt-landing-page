@@ -33,6 +33,120 @@
       margin-top: 100px;
     }
 
+    // Add the awareness banner styles HERE (above .glowing-info-container)
+    .awareness-banner {
+      background: linear-gradient(135deg, #8a2be2 0%, #1a73e8 100%);
+      margin: 0 auto 16px auto;
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: 0 8px 32px rgba(26, 115, 232, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 10;
+      max-width: 580px;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        padding: 12px 16px;
+        max-width: 320px;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 40px rgba(26, 115, 232, 0.4);
+      }
+    }
+
+    .banner-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+    }
+
+    .banner-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      backdrop-filter: blur(10px);
+      flex-shrink: 0;
+      color: white;
+
+      @media (max-width: 768px) {
+        width: 32px;
+        height: 32px;
+      }
+
+      // Zoning map icon - blue color (from button gradient)
+      &:has(svg path[d*="9 20L3 17V4L9 7M9 20L15 17M9 20V7M15 17L21 20V7L15 4M15 17V4M9 7L15 4"]) {
+        color: #355be0; // Blue from button gradient
+      }
+
+      // Chatbot icon - purple color (from button gradient)
+      &:has(svg path[d*="21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"]) {
+        color: #b945cc; // Purple from button gradient
+      }
+
+      // Light bulb icon - yellow color
+      &:has(svg path[d*="9.663 17h4.673"]) {
+        color: #FFD700; // Golden yellow
+      }
+    }
+
+    .banner-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      font-size: 16px;
+      font-family: 'satoshi-medium';
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        gap: 6px;
+      }
+    }
+
+    .banner-text-maps {
+      color: #FFFFFF;
+      font-weight: 600;
+      font-family: 'satoshi-medium';
+    }
+
+    .banner-text-plus {
+      color: #FFFFFF;
+      margin: 0 2px;
+      font-family: 'satoshi-medium';
+    }
+
+    .banner-text-chatbot {
+      color: #FFFFFF;
+      font-weight: 600;
+      font-family: 'satoshi-medium';
+    }
+
+    .banner-text-colon {
+      color: #FFFFFF;
+      margin: 0 2px;
+      font-family: 'satoshi-medium';
+    }
+
+    .banner-text-smarter {
+      color: #FFFFFF;
+      font-weight: 500;
+      font-family: 'satoshi-medium';
+    }
+    /* End of awareness banner */
     .glowing-info-container {
       display: flex;
       justify-content: center;
