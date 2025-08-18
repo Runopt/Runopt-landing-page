@@ -28,8 +28,8 @@ const Hero = () => {
                   </svg>
                 </div>
                 <span className="banner-text-chatbot">
-                  <span className="desktop-text">chatbot</span>
-                  <span className="mobile-text">chatbot</span>
+                  <span className="desktop-text">Chatbot</span>
+                  <span className="mobile-text">Chatbot</span>
                 </span>
                 <span className="banner-text-colon">: </span>
                 <div className="banner-icon">
