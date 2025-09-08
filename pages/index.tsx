@@ -22,6 +22,8 @@ export default function Home() {
       </Head>
       <Navbar />
 
+      <h1 className="sr-only">AI-powered software for land development — Runopt</h1>
+
       <Hero />
 
       <Features />
