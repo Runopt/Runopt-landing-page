@@ -39,7 +39,7 @@ const Features: React.FC = () => {
       <div className="features features-one">
         <div className="feature" id="zone">
           <div className="illustration">
-            <img src="../images/analyze.png" alt="Zoning analysis illustration" />
+            <img src="../images/analyze.png" alt="Zoning analysis illustration" loading="lazy" decoding="async" />
           </div>
           <div className="desc">
             <h5>Zoning Tools for Site Analysis</h5>
@@ -67,7 +67,7 @@ const Features: React.FC = () => {
 
         <div className="feature" id="dataDriven">
           <div className="illustration">
-            <img src="../images/data.png" alt="Data-driven feasibility illustration" />
+            <img src="../images/data.png" alt="Data-driven feasibility illustration" loading="lazy" decoding="async" />
           </div>
           <div className="desc">
             <h5>Data-Driven Feasibility Insights</h5>
@@ -97,7 +97,7 @@ const Features: React.FC = () => {
       <div className="features">
         <div className="feature" id="reporting">
           <div className="illustration">
-            <img src="../images/reporting.png" alt="Customizable reports illustration" />
+            <img src="../images/reporting.png" alt="Customizable reports illustration" loading="lazy" decoding="async" />
           </div>
           <div className="desc">
             <h5>Customizable Reports for Non-Engineers</h5>
@@ -123,7 +123,7 @@ const Features: React.FC = () => {
         </div>
         <div className="feature" id="optimize">
           <div className="illustration">
-            <img src="../images/grading.png" alt="Optimized grading and drainage illustration" />
+            <img src="../images/grading.png" alt="Optimized grading and drainage illustration" loading="lazy" decoding="async" />
           </div>
           <div className="desc">
             <h5>Optimized Grading and Drainage Design</h5>

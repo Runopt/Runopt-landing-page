@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="navbar-inner-wrapper">
           <div className="logo-wrapper">
             <Link href="/">
-              <img src="/images/logo.svg" alt="Logo" />
+              <img src="/images/logo.svg" alt="Runopt logo" decoding="async" fetchpriority="high" />
             </Link>
           </div>
 
