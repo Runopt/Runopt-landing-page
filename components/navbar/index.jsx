@@ -76,7 +76,7 @@ const Navbar = () => {
         <div className={`heading-wrapper ${scrolled ? 'scrolled' : ''}`}>
           <div className="logo-wrapper">
             <Image
-              src="../images/logo-mobile.png"
+              src="/images/logo-mobile.png"
               alt="Logo"
               width="106"
               height="56"
@@ -99,19 +99,19 @@ const Navbar = () => {
             <Link href="/">
               <li className={router.pathname === '/' ? 'active' : ''}>Home</li>
             </Link>
-            <Link href="/features">
-              <li className={router.pathname === '/features' ? 'active' : ''}>
+            <Link href="/#features">
+              <li className={router.pathname === '/#features' ? 'active' : ''}>
                 Features
               </li>
             </Link>
 
-            <Link href="/faqs">
-              <li className={router.pathname === '/faqs' ? 'active' : ''}>
+            <Link href="/#faqs">
+              <li className={router.pathname === '/#faqs' ? 'active' : ''}>
                 FAQs
               </li>
             </Link>
             <Link href="/about-us">
-              <li className={router.pathname === '/about' ? 'active' : ''}>
+              <li className={router.pathname === '/about-us' ? 'active' : ''}>
                 About
               </li>
             </Link>
@@ -120,11 +120,7 @@ const Navbar = () => {
             {/* <Link href="/login">
               <div className="login">Login</div>
             </Link> */}
-            <Link href="/signup">
-              <div className="sign-up">
-                <p>Contact us</p>
-              </div>
-            </Link>
+            <CalendlyPopup />
           </div>
         </div>
       </div>
