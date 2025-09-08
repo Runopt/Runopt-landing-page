@@ -14,7 +14,7 @@ const Footer = () => {
           <input type="email" name="" placeholder="Enter your email" id="" />
           <button>
             Join the waitlist
-            <img src="../images/icons/arrow-right.svg" alt="" />
+            <img src="../images/icons/arrow-right.svg" alt="Arrow right icon" />
           </button>
         </div>
       </div>
@@ -86,13 +86,13 @@ const Footer = () => {
         <small>Runopt Copyright © 2024. All Rights Reserved.</small>
         {/* <div className="footer__socials">
           <a href="www.google.com" className="footer__social-link">
-            <img src="../images/icons/Youtube.svg" alt="Instagram" />
+            <img src="../images/icons/Youtube.svg" alt="YouTube icon" />
           </a>
           <a href="www.google.com" className="footer__social-link">
-            <img src="../images/icons/Instagram.svg" alt="Twitter" />
+            <img src="../images/icons/Instagram.svg" alt="Instagram icon" />
           </a>
           <a href="www.google.com" className="footer__social-link">
-            <img src="../images/icons/Twitter.svg" alt="LinkedIn" />
+            <img src="../images/icons/Twitter.svg" alt="Twitter/X icon" />
           </a>
         </div> */}
       </div>
