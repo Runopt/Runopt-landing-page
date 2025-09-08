@@ -3,7 +3,8 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import CalendlyPopup from '../calendly';
+import dynamic from 'next/dynamic';
+const CalendlyPopup = dynamic(() => import('../calendly'), { ssr: false, loading: () => null });
 // import Logo from '@/components/assets/logo.svg'
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);

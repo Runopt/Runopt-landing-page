@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import CalendlyPopup from '../calendly';
+import dynamic from 'next/dynamic';
+const CalendlyPopup = dynamic(() => import('../calendly'), { ssr: false, loading: () => null });
 interface FAQItem {
   id: number;
   question: string;
