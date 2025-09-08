@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import CalendlyPopup from '../calendly';
+import dynamic from 'next/dynamic';
+const CalendlyPopup = dynamic(() => import('../calendly'), { ssr: false, loading: () => null });
 interface FAQItem {
   id: number;
   question: string;
@@ -74,9 +75,9 @@ const Faq: React.FC = () => {
 
                 <div className={`open-faq ${openFAQ === faq.id ? 'open' : ''}`}>
                   {openFAQ === faq.id ? (
-                    <img src="./images/icons/minus.svg" alt="" />
+                    <img src="./images/icons/minus.svg" alt="Collapse FAQ" />
                   ) : (
-                    <img src="./images/icons/add.svg" alt="" />
+                    <img src="./images/icons/add.svg" alt="Expand FAQ" />
                   )}
                 </div>
               </div>
@@ -89,7 +90,7 @@ const Faq: React.FC = () => {
         })}
 
         <div className="contact-us">
-          <img src="./images/contact.svg" alt="" />
+          <img src="./images/contact.svg" alt="Contact illustration" />
           <h4>Still Got Questions?</h4>
           <p>Can’t find the answer you are looking for?</p>
             <CalendlyPopup />

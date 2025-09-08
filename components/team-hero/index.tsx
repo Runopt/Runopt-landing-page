@@ -3,10 +3,10 @@ import React from 'react';
 const TeamHero = () => {
   return (
     <div className="tean-hero-container">
-      <h3>
+      <h1>
         About
         <span> Us</span>
-      </h3>
+      </h1>
       <p>Revolutionize the land development design process</p>
     </div>
   );

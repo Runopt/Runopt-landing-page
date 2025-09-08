@@ -4,7 +4,7 @@ const PrivacyHero = () => {
   return (
     <div className=" tean-hero-container">
       <div className="text">
-        <h3>Privacy Policy</h3>
+        <h1>Privacy Policy</h1>
         <p>Last update: 19th Sept, 2024</p>
       </div>
     </div>

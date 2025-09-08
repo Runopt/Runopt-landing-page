@@ -7,7 +7,7 @@ const MeetTeam = () => {
       <div className="glowing-info-container">
         <div className="info-glow"></div>
         <div className="info">
-          <img src="./images/icons/about-icon.png" alt="" />
+          <img src="./images/icons/about-icon.png" alt="About Runopt icon" />
           <div>Our mission and vision</div>
         </div>
       </div>
@@ -22,7 +22,7 @@ const MeetTeam = () => {
       <Link href="./about-us">
         <button>
           Learn more
-          <img src="../images/icons/arrow-right.svg" alt="" />
+          <img src="../images/icons/arrow-right.svg" alt="Arrow right icon" />
         </button>
       </Link>
     </div>
