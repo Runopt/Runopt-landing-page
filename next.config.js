@@ -1,6 +1,7 @@
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false,
+  swcMinify: true,
+  compress: true,
   images: {
     unoptimized: true, // Disable image optimization
     disableStaticImages: true, // Disable static image imports
