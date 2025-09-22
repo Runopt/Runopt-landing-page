@@ -70,7 +70,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-cta">
-          <Link
+          {/* <Link
             // href="https://forms.gle/vtNmkbT1BV5kayz68"
             href="https://core.runopt.co/zoning-map"
             target="_blank"
@@ -85,7 +85,7 @@ const Hero = () => {
             >
               Get Zoning Insights
             </button>
-          </Link>
+          </Link> */}
 
           {/* <Link
             href="https://forms.gle/vtNmkbT1BV5kayz68"
@@ -98,7 +98,7 @@ const Hero = () => {
             </button>
           </Link> */}
           {/* <CalendlyPopup /> */}
-          <Link
+          {/* <Link
             href="https://core.runopt.co/"
             target="_blank"
             rel="noopener noreferrer"
@@ -109,7 +109,7 @@ const Hero = () => {
             >
               Analyze Site CSV (Beta)
             </button>
-          </Link>
+          </Link> */}
         </div>
         {/* <div className="cta-wrapper">
           <input type="email" name="" placeholder="Enter your email" id="" />
@@ -121,7 +121,8 @@ const Hero = () => {
 
       <div className="demo-container">
         <iframe
-          src="https://app.supademo.com/embed/cmbh50syr5gonsn1r8hcc4ecc?embed_v=2"
+          // src="https://app.supademo.com/embed/cmbh50syr5gonsn1r8hcc4ecc?embed_v=2"
+          src="https://app.supademo.com/embed/cmfsrr5v80rv010k84s95fx6o?embed_v=2&utm_source=embed"
           loading="lazy"
           title="Runopt Demo"
           allow="clipboard-write"
