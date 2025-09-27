@@ -42,18 +42,12 @@ const Features: React.FC = () => {
             <img src="../images/analyze.png" alt="Zoning analysis illustration" loading="lazy" decoding="async" />
           </div>
           <div className="desc">
-            <h5>Zoning Tools for Site Analysis</h5>
+            <h5>Collaborative Platform for Data Center Site Proposals</h5>
             <p>
-              Let Runopt handle the zoning complexities and you could focus on
-              innovative design.
-              <br />
               <span className="dots"> {!expanded.zone && '... '}</span>
               <span className={expanded.zone ? 'show' : 'hide'}>
-                - Use natural language to ask AI for interpretations of local
-                zoning regulations <br />- Instant compliance checks for
-                setbacks, parking restrictions, and more
-                <br /> - Have an interactive zoning map to check zoning
-                ordinances for specific buildings and
+                - Facilitate seamless collaboration among developers, utility providers, and regulators to align on power, connectivity, and zoning requirements. <br />- Score and prioritize potential sites based on utility and fiber availability, transportation access, and other key feasibility factors.
+                <br /> - Accelerate decision-making by bringing stakeholders together around a shared, data-driven platform - from early feasibility through to site selection.
               </span>
               <span
                 className="read-more"
@@ -70,18 +64,12 @@ const Features: React.FC = () => {
             <img src="../images/data.png" alt="Data-driven feasibility illustration" loading="lazy" decoding="async" />
           </div>
           <div className="desc">
-            <h5>Data-Driven Feasibility Insights</h5>
+            <h5>A Platform for Utilities to Align Stakeholders and Timelines</h5>
             <p>
-              Make smarter site decisions with Runopt’s real estate feasibility
-              analysis. <br />
               <span className="dots"> {!expanded.dataDriven && '... '}</span>
               <span className={expanded.dataDriven ? 'show' : 'hide'}>
-                -Accelerate project evaluation with fast, accurate site
-                feasibility checks
-                <br />- Confidently explore multiple design scenarios to
-                maximize site potential
-                <br />- Reduce costly guesswork and speed up early-stage
-                decision making
+                - Facilitate early, seamless collaboration between developers and utility providers
+                <br />- Predict realistic timelines and minimize service delays
               </span>
               <span
                 className="read-more"
@@ -100,17 +88,15 @@ const Features: React.FC = () => {
             <img src="../images/reporting.png" alt="Customizable reports illustration" loading="lazy" decoding="async" />
           </div>
           <div className="desc">
-            <h5>Customizable Reports for Non-Engineers</h5>
+            <h5>Interactive Geospatial Platform for Informed Site Evaluation</h5>
             <p>
-              Translate complex civil design data into clear, accessible
-              insights. <br />
               <span className="dots">{!expanded.reporting && '... '}</span>
               <span className={expanded.reporting ? 'show' : 'hide'}>
-                - Simplify technical details for easy understanding by real
-                estate teams and stakeholders
+                - Visualize sites in 3D with terrain and utility overlays
                 <br />
-                -Bridge the knowledge gap to make conversations with civil
-                engineers more productive
+                - Use color-coded maps with interactive data for quick analysis
+                <br />
+                - Gain zoning, utility insights for faster, safer investment decisions
               </span>
               <span
                 className="read-more"
