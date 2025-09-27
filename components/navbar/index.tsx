@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="navbar-inner-wrapper">
           <div className="logo-wrapper">
             <Link href="/">
-              <img src="/images/logo.svg" alt="Runopt logo" decoding="async" fetchpriority="high" />
+              <img src="/images/logo.svg" alt="Runopt logo" decoding="async" fetchPriority="high" />
             </Link>
           </div>
 
@@ -67,8 +67,8 @@ const Navbar = () => {
             {/* <a href="">Contact us</a> */}
             {/* <button>
               <p>Contact us</p>
-            </button> */}
-            <CalendlyPopup />
+            </button>
+            <CalendlyPopup /> */}
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
             {/* <Link href="/login">
               <div className="login">Login</div>
             </Link> */}
-            <CalendlyPopup />
+            {/* <CalendlyPopup /> */}
           </div>
         </div>
       </div>

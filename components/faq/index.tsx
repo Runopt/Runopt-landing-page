@@ -17,35 +17,38 @@ const Faq: React.FC = () => {
       id: 0,
       question: 'What is Runopt?',
       answer:
-        'Runopt is an innovative software solution that integrates layout, grading, drainage, and utilities into one large optimization problem driven by artificial intelligence. It aims to revolutionize the land development design process by drastically increasing design speed, reducing costs, and mitigating environmental impacts of development.',
+        // 'Runopt is an innovative software solution that integrates layout, grading, drainage, and utilities into one large optimization problem driven by artificial intelligence. It aims to revolutionize the land development design process by drastically increasing design speed, reducing costs, and mitigating environmental impacts of development.',
+        'Runopt is an AI-powered platform that enables developers, data center operators, and utilities to collaborate on site feasibility in real time. It combines 3D visualization, zoning, terrain, and utility insights to align stakeholders early in the planning process. Teams can score, compare, and export sites to make faster, informed development decisions.'
     },
+    // {
+    //   id: ,
+    //   question:
+    //     'How does Runopt differ from existing land development software like autograder?',
+    //   answer:
+    //     'Runopt integrates all components of design into one optimization problem. There are cases in which saving on cut and fill can increase costs in other aspects of construction: Runopt identifies this. This allows for synergies between variables and eliminates the need for time-consuming manual iterations.',
+    // },
     {
       id: 1,
-      question:
-        'How does Runopt differ from existing land development software like autograder?',
+      question: 'Who can benefit from using Runopt? ',
       answer:
-        'Runopt integrates all components of design into one optimization problem. There are cases in which saving on cut and fill can increase costs in other aspects of construction: Runopt identifies this. This allows for synergies between variables and eliminates the need for time-consuming manual iterations.',
+        // 'Runopt is designed for civil engineers, urban planners, developers, and construction firms. It is particularly valuable for those working on site development projects, from small-scale residential developments to large commercial or industrial sites. Additionally, stakeholders who prioritize ecological and environmental benefits, such as governments and NGOs, can also benefit from Runopt s sustainable design capabilities',
+        'Runopt is an AI-powered platform that helps land developers and data center operators collaborate with utilities, regulators, and the public on site feasibility from the start. From small-scale residential developments to large commercial, data center, and industrial sites, it integrates 3D visualization, zoning, terrain, and utility data to make opportunities and constraints transparent. Teams can score, compare, and share sites to align stakeholders early, speeding up approvals and reducing costly redesigns.',
     },
     {
       id: 2,
-      question: 'Who can benefit from using Runopt? ',
-      answer:
-        'Runopt is designed for civil engineers, urban planners, developers, and construction firms. It is particularly valuable for those working on site development projects, from small-scale residential developments to large commercial or industrial sites. Additionally, stakeholders who prioritize ecological and environmental benefits, such as governments and NGOs, can also benefit from Runopt s sustainable design capabilities',
-    },
-    {
-      id: 3,
       question: 'What kinds of projects can Runopt manage?',
       answer:
-        'Runopt can handle most residential, commercial, transportation, and industrial projects. There are specific use cases that will come in later packages such as rail and agricultural.',
+        // 'Runopt can handle most residential, commercial, transportation, and industrial projects. There are specific use cases that will come in later packages such as rail and agricultural.',
+        'Runopt can handle most residential, commercial, transportation, and industrial projects, including a specific focus on data centers. There are specific use cases that will come in later packages such as rail and agricultural.',
     },
+    // {
+    //   id: 3,
+    //   question: 'Can I choose to not automate any parts of the design?',
+    //   answer:
+    //     'Yes. You can either opt out of automating parts of design before running, or alter specific positions, grading, sizes etc. after optimization is done.',
+    // },
     {
       id: 4,
-      question: 'Can I choose to not automate any parts of the design?',
-      answer:
-        'Yes. You can either opt out of automating parts of design before running, or alter specific positions, grading, sizes etc. after optimization is done.',
-    },
-    {
-      id: 5,
       question:
         'What measures are in place to protect the privacy of the data I uploaded?',
       answer:
