@@ -30,17 +30,19 @@
 }
 
 .newsletter-container {
-  height: max-content;
+  width: 100%;
   background: $bgBlack;
   color: $whiteTextPrimary;
   padding: 120px 0 80px;
   position: relative;
-  overflow-x: hidden;
+  overflow: visible;
 
   .newsletter-content {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .newsletter-header {
@@ -49,8 +51,8 @@
 
     .newsletter-title {
       font-family: 'satoshi-bold';
-      font-size: 3.5rem;
-      font-weight: 700;
+      font-size: 3.0rem;
+      font-weight: 500;
       //margin-bottom: 5px;
       background: $primaryColor;
       -webkit-background-clip: text;
