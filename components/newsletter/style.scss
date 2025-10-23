@@ -30,7 +30,7 @@
 }
 
 .newsletter-container {
-  min-height: auto;
+  height: max-content;
   background: $bgBlack;
   color: $whiteTextPrimary;
   padding: 120px 0 80px;
@@ -51,7 +51,7 @@
       font-family: 'satoshi-bold';
       font-size: 3.5rem;
       font-weight: 700;
-      margin-bottom: 5px;
+      //margin-bottom: 5px;
       background: $primaryColor;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
