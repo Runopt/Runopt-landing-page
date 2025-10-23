@@ -1,0 +1,509 @@
+@import '../../styles/variables';
+
+// Global reference link styling
+.newsletter-container {
+  a.reference-link {
+    color: #FFD700 !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #FFA500 !important;
+      text-decoration: underline !important;
+      text-decoration-color: #FFA500;
+      text-underline-offset: 2px;
+    }
+
+    &:visited {
+      color: #FFD700 !important;
+    }
+
+    &:active {
+      color: #FFD700 !important;
+    }
+
+    &:focus {
+      color: #FFD700 !important;
+    }
+  }
+}
+
+.newsletter-container {
+  min-height: 100vh;
+  background: $bgBlack;
+  color: $whiteTextPrimary;
+  padding: 120px 0 80px;
+  position: relative;
+  overflow-x: hidden;
+
+  .newsletter-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .newsletter-header {
+    text-align: center;
+    margin-bottom: 80px;
+
+    .newsletter-title {
+      font-family: 'satoshi-bold';
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      background: $primaryColor;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .newsletter-intro {
+      max-width: 800px;
+      margin: 0 auto;
+
+      .intro-text {
+        font-family: 'satoshi-medium';
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: $whiteTextPrimary;
+
+        @media (max-width: 768px) {
+          font-size: 1.25rem;
+        }
+      }
+
+      .intro-description {
+        font-family: 'satoshi-regular';
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        color: $secondaryTextColor;
+      }
+
+      .insights-list {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+        padding-left: 20px;
+
+        li {
+          font-family: 'satoshi-regular';
+          font-size: 1rem;
+          margin-bottom: 15px;
+          color: $whiteTextPrimary;
+          line-height: 1.6;
+
+          &::marker {
+            color: #B945CC;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter-image-section {
+    margin-bottom: 80px;
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+
+      @media (max-width: 768px) {
+        padding: 20px;
+        border-radius: 15px;
+      }
+
+      .newsletter-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+
+  .update-section {
+    margin-bottom: 60px;
+
+    .update-content {
+      max-width: 800px;
+      margin: 0 auto;
+
+      .update-title {
+        font-family: 'satoshi-bold';
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: $whiteTextPrimary;
+        text-align: center;
+
+        @media (max-width: 768px) {
+          font-size: 2rem;
+        }
+      }
+
+      .update-intro {
+        font-family: 'satoshi-regular';
+        font-size: 1.1rem;
+        color: $secondaryTextColor;
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+
+        .policy-section {
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 15px;
+          padding: 40px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          margin: 50px 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          @media (max-width: 768px) {
+            padding: 30px 20px;
+            margin: 40px 0;
+          }
+
+        .policy-title {
+          font-family: 'satoshi-bold';
+          font-size: 1.8rem;
+          margin-bottom: 25px;
+          color: $whiteTextPrimary;
+
+          @media (max-width: 768px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        .policy-text {
+          font-family: 'satoshi-regular';
+          font-size: 1rem;
+          color: $whiteTextPrimary;
+          line-height: 1.7;
+          margin: 25px 0 20px 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .highlight {
+            background: linear-gradient(120deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            text-decoration: underline;
+            text-decoration-color: #FFD700;
+            text-underline-offset: 2px;
+          }
+
+          .reference-link {
+            color: #FFD700 !important;
+            text-decoration: none !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: #FFA500 !important;
+              text-decoration: underline !important;
+              text-decoration-color: #FFA500;
+              text-underline-offset: 2px;
+            }
+
+            &:visited {
+              color: #FFD700 !important;
+            }
+
+            &:active {
+              color: #FFD700 !important;
+            }
+
+            &:focus {
+              color: #FFD700 !important;
+            }
+          }
+        }
+
+        .bill-section {
+          margin: 40px 0;
+          padding: 25px;
+          background: rgba(255, 255, 255, 0.03);
+          border-radius: 12px;
+          border-left: 4px solid #B945CC;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .bill-title {
+            font-family: 'satoshi-bold';
+            font-size: 1.2rem;
+            color: $whiteTextPrimary;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &::before {
+              content: '📋';
+              font-size: 1.1rem;
+            }
+          }
+
+          .bill-requirements {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              font-family: 'satoshi-regular';
+              font-size: 0.95rem;
+              color: $whiteTextPrimary;
+              line-height: 1.6;
+              margin-bottom: 12px;
+              padding-left: 20px;
+              position: relative;
+
+              &::before {
+                content: '•';
+                color: #B945CC;
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+                top: 0;
+              }
+
+              .highlight {
+                background: linear-gradient(120deg, #FFD700 0%, #FFA500 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                font-weight: 600;
+                text-decoration: underline;
+                text-decoration-color: #FFD700;
+                text-underline-offset: 2px;
+              }
+            }
+          }
+
+          .water-requirements {
+            .requirement-subtitle {
+              font-family: 'satoshi-medium';
+              font-size: 1rem;
+              color: #B945CC;
+              margin: 20px 0 10px 0;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+
+              &::before {
+                content: '💧';
+                font-size: 0.9rem;
+              }
+            }
+
+            .policy-text {
+              margin-bottom: 15px;
+              font-size: 0.95rem;
+            }
+          }
+        }
+
+        .utilities-section {
+          margin: 30px 0;
+
+          .utilities-title {
+            font-family: 'satoshi-medium';
+            font-size: 1.1rem;
+            color: $whiteTextPrimary;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &::before {
+              content: '⚡';
+              font-size: 1rem;
+            }
+          }
+
+          .utility-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+            border-left: 3px solid #B945CC;
+
+            .utility-name {
+              font-family: 'satoshi-medium';
+              font-size: 1rem;
+              color: #B945CC;
+              margin-bottom: 12px;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+
+              &::before {
+                content: '🏢';
+                font-size: 0.9rem;
+              }
+            }
+
+            .policy-text {
+              margin: 0;
+              font-size: 0.95rem;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .actionable-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          .actionable-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: rgba(185, 69, 204, 0.05);
+            border-radius: 12px;
+            border-left: 4px solid #B945CC;
+
+            .actionable-icon {
+              font-size: 1.5rem;
+              flex-shrink: 0;
+              margin-top: 2px;
+            }
+
+            .actionable-content {
+              font-family: 'satoshi-regular';
+              font-size: 1rem;
+              color: $whiteTextPrimary;
+              line-height: 1.6;
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .insights-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          counter-reset: insight-counter;
+
+          .insight-item {
+            counter-increment: insight-counter;
+            margin-bottom: 25px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border-left: 4px solid #FFD700;
+            position: relative;
+
+            &::before {
+              content: counter(insight-counter);
+              position: absolute;
+              top: 20px;
+              left: 20px;
+              background: #FFD700;
+              color: $bgBlack;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-family: 'satoshi-bold';
+              font-size: 0.9rem;
+            }
+
+            .insight-content {
+              font-family: 'satoshi-regular';
+              font-size: 1rem;
+              color: $whiteTextPrimary;
+              line-height: 1.6;
+              padding-left: 50px;
+
+              strong {
+                font-family: 'satoshi-medium';
+                color: #FFD700;
+              }
+
+              .reference {
+                font-family: 'satoshi-regular';
+                font-size: 0.9rem;
+                color: $secondaryTextColor;
+                font-style: italic;
+              }
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter-footer {
+    text-align: center;
+    padding-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    .footer-content {
+      .footer-text {
+        font-family: 'satoshi-regular';
+        font-size: 1rem;
+        color: $secondaryTextColor;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .footer-signature {
+        .signature-text {
+          font-family: 'satoshi-medium';
+          font-size: 1.1rem;
+          color: #B945CC;
+        }
+      }
+    }
+  }
+}

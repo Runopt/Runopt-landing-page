@@ -63,6 +63,11 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
+              <Link href="/newsletter">
+                <li className={router.pathname === '/newsletter' ? 'active' : ''}>
+                  Newsletter
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="cta-btn-wrapper">
