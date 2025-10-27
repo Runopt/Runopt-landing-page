@@ -63,8 +63,8 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href="/newsletter">
-                <li className={router.pathname === '/newsletter' ? 'active' : ''}>
+              <Link href="/newsletter-archive">
+                <li className={router.pathname === '/newsletter-archive' ? 'active' : ''}>
                   Newsletter
                 </li>
               </Link>
